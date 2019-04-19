@@ -235,6 +235,7 @@ var Client = /** @class */ (function () {
                             maxWebSocketChunkSize: this.maxWebSocketChunkSize,
                             forceBinaryWSFrames: this.forceBinaryWSFrames,
                             logRawCommunication: this.logRawCommunication,
+                            appendMissingNULLonIncoming: this.appendMissingNULLonIncoming,
                             onConnect: function (frame) {
                                 if (!_this._active) {
                                     _this.debug('STOMP got connected while deactivate was issued, will disconnect now');
